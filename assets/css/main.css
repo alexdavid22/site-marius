@@ -1,73 +1,32 @@
-.full-slideshow {
-  margin-top: 100px;
-  border: 3px solid rgb(39, 39, 41);
-  padding: 10px 10px;
-}
-
-.slideshow-container img {
-  width: 100%;
-  height: auto;
-}
-
-.slideshow-container {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.slideshow-title {
-  text-align: center;
-  margin-bottom: 25px;
+.titluri div {
+  display: inline-block;
+  width: 200px;
+  border: 1px solid black; /* Add a border to see the boundaries of the container */
+  padding: 10px; /* Add padding for clarity */
+  cursor: pointer;
 }
 
 .slide {
-  display: none;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
-.fade {
-  animation-name: fade;
-  animation-duration: 2s;
-}
-
-@keyframes fade {
-  0% {
+@keyframes fadeIn {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }
 
-.full-slideshow a {
-  cursor: pointer;
-  position: absolute;
-  top: 50%; /* Acest lucru îl centrează pe verticală */
-  transform: translateY(-50%);
-  padding: 10px;
-  font-size: 30px;
-  background: rgba(5, 107, 170, 0.5);
-  color: white;
-  text-decoration: none;
+.slideshow-container {
+  max-width: 600px; /* Ajustează dimensiunea containerului după necesități */
+  margin: auto;
 }
 
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
-}
-
-.slideshow-container a:hover {
-  background: rgba(179, 29, 29, 0.8);
-}
-
-.slide-text {
-  border: 3px solid rgb(39, 39, 41);
-}
-.slide-text h1 {
-  text-align: center;
+img {
+  width: 100%; /* Asigură că imaginea ocupă întreaga lățime a containerului */
 }
 
 /* why choose me section */
