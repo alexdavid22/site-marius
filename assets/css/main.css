@@ -6,9 +6,15 @@
   cursor: pointer;
 }
 
+.slideshow-container {
+  max-width: 600px; /* Ajustează dimensiunea containerului după necesități */
+  margin: auto;
+}
+
 .slide {
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
+  position: relative;
 }
 
 @keyframes fadeIn {
@@ -20,12 +26,33 @@
   }
 }
 
-.slideshow-container {
-  max-width: 600px; /* Ajustează dimensiunea containerului după necesități */
-  margin: auto;
+.slider-arrows {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
 }
 
-img {
+.arrow {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.left-arrow {
+  margin-right: auto;
+}
+
+.right-arrow {
+  margin-left: auto;
+}
+
+.slide img {
   width: 100%; /* Asigură că imaginea ocupă întreaga lățime a containerului */
 }
 
