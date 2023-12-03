@@ -48,58 +48,41 @@
         enim ut. Cursus turpis massa tincidunt dui ut.
       </p>
     </div>
+    <!-- BIG SLIDESHOW -->
     <div class="titluri">
-      <div><h2 onclick="afiseazaSlide(1)">Titlu Slide 1</h2></div>
-      <div><h2 onclick="afiseazaSlide(2)">Titlu Slide 2</h2></div>
+      <div><h2 onclick="showSlides(1)">Titlu Slide 1</h2></div>
+      <div><h2 onclick="showSlides(2)">Titlu Slide 2</h2></div>
     </div>
     <div class="slideshow-container">
-      <div class="slide">
-        <div class="t">
-          <h2 onclick="afiseazaSlideMic1(-1)">Titlu Slide 1</h2>
-        </div>
-        <div class="t">
-          <h2 onclick="afiseazaSlideMic1(1)">Titlu Slide 2</h2>
-        </div>
-        <div class="slideshowMic1" id="slide1">
-          <img
-            src="https://as2.ftcdn.net/v2/jpg/01/07/82/55/1000_F_107825577_lYRRtJEDqwuvFoKxBxdmyqIeGYgxDBCo.jpg"
-            alt="Imagine 1"
-          />
-          <p>Text pentru Slide 1.</p>
-        </div>
-        <div class="slideshowMic1" id="slide1">
-          <img
-            src="https://www.turistinfo.ro/images/cazare/955649.jpg"
-            alt="Imagine 1"
-          />
-          <p>Text pentru Slide 2.</p>
+      <div class="slide-mare">
+        <button onclick="plusSlides1(-1)">prev</button>
+        <button onclick="plusSlides1(1)">next</button>
+        <div class="slide-mic-1">
+          <div class="slide-mic-js-1">
+            <img src="assets/images/1.png" alt="Imagine 1" />
+            <p>Text pentru Slide 1.</p>
+          </div>
+          <div class="slide-mic-js-1">
+            <img src="assets/images/2.png" alt="Imagine 1" />
+            <p>Text pentru Slide 2.</p>
+          </div>
         </div>
       </div>
-      <div class="slide">
-        <div class="t">
-          <h2 onclick="afiseazaSlideMic2(-1)">Titlu Slide 1</h2>
-        </div>
-        <div class="t">
-          <h2 onclick="afiseazaSlideMic2(1)">Titlu Slide 2</h2>
-        </div>
-        <div class="slideshowMic2" id="slide2">
-          <img
-            src="https://cdn3.photoblogstop.com/wp-content/uploads/2012/07/Sierra_HDR_Panorama_DFX8048_2280x819_Q40_wm_mini.jpg"
-            alt="Imagine 2"
-          />
-          <p>Text pentru Slide 2.</p>
-        </div>
+      <div class="slide-mare">
+        <button onclick="plusSlides2(-1)">prev</button>
+        <button onclick="plusSlides2(1)">next</button>
+        <div class="slide-mic-2">
+          <div class="slide-mic-js-2">
+            <img src="assets/images/3.png" alt="Imagine 2" />
+            <p>Text pentru Slide 3.</p>
+          </div>
 
-        <div class="slideshowMic2" id="slide2">
-          <img
-            src="https://images.unsplash.com/photo-1513735539099-cf6e5d559d82?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eSUyMHBhbm9yYW1hfGVufDB8fDB8fHww"
-            alt="Imagine 2"
-          />
-          <p>Text pentru Slide 3.</p>
+          <div class="slide-mic-js-2">
+            <img src="assets/images/4.png" alt="Imagine 2" />
+            <p>Text pentru Slide 4.</p>
+          </div>
         </div>
       </div>
-
-      <!-- Adaugă mai multe slide-uri la nevoie -->
     </div>
 
     <div class="choose-me" id="choose-me">

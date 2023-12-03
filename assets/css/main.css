@@ -11,10 +11,14 @@
   margin: auto;
 }
 
-.slide {
+.slide-mare {
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
   position: relative;
+}
+
+.slide-mare img {
+  width: 100%; /* Asigură că imaginea ocupă întreaga lățime a containerului */
 }
 
 @keyframes fadeIn {
@@ -50,10 +54,6 @@
 
 .right-arrow {
   margin-left: auto;
-}
-
-.slide img {
-  width: 100%; /* Asigură că imaginea ocupă întreaga lățime a containerului */
 }
 
 /* why choose me section */
