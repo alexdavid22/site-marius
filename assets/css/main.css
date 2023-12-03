@@ -1,59 +1,66 @@
-.titluri div {
-  display: inline-block;
+.titluri button {
+  background-color: rgb(58, 58, 58);
   width: 200px;
-  border: 1px solid black; /* Add a border to see the boundaries of the container */
-  padding: 10px; /* Add padding for clarity */
-  cursor: pointer;
+  border-left: 10px solid rgb(47, 47, 47);
+  border-right: 10px solid rgb(47, 47, 47);
+  padding: 10px;
+  margin-top: 10px;
+  color: rgb(159, 165, 165);
+  font-weight: 600;
+}
+
+.titluri button:hover {
+  background-color: rgb(35, 35, 35);
 }
 
 .slideshow-container {
-  max-width: 600px; /* Ajustează dimensiunea containerului după necesități */
+  max-width: 1000px; /* Ajustează dimensiunea containerului după necesități */
   margin: auto;
 }
 
 .slide-mare {
-  opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards;
   position: relative;
+}
+
+.slide-mare button {
+  position: absolute;
+  top: 50%;
+  height: 40px;
+  width: 35px;
+  background-color: rgb(124, 124, 124);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.slide-mare button:hover {
+  background-color: rgba(184, 183, 183, 0.8);
+}
+
+.slide-mare button:nth-child(4) {
+  right: 0;
+  border-radius: 0 3px 3px 0;
 }
 
 .slide-mare img {
   width: 100%; /* Asigură că imaginea ocupă întreaga lățime a containerului */
 }
 
-@keyframes fadeIn {
+.slide-mic-js-1,
+.slide-mic-js-2 {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
   }
-}
-
-.slider-arrows {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-}
-
-.arrow {
-  font-size: 30px;
-  cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 10px;
-  border: none;
-  outline: none;
-}
-
-.left-arrow {
-  margin-right: auto;
-}
-
-.right-arrow {
-  margin-left: auto;
 }
 
 /* why choose me section */
